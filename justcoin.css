@@ -11,27 +11,49 @@
             font-family:sans-serif
             
         }
+        img {
+          user-select: none; /* This will make the image unselectable */
+          outline: none; /* This will remove the blue outline */
+      }
+      .unselectable {
+        user-select: none;
+        outline: none;
+    }
+    .unselectable {
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+      outline: none;
+  }
         #coin {
             width: 400px;
             height: auto;
             cursor: pointer;
             transition: transform 0.2s ease; /* Add a smooth transition effect */
-        
+        background-color: transparent;
             -webkit-user-drag: none;
-            user-select: none;
+            user-select: none; /* This makes the text and images unselectable */
+          outline: none; 
+          border-radius: 0px;
+          border: none;
             -moz-user-select: none;
              -webkit-user-select: none;
             -ms-user-select: none;
+            -webkit-tap-highlight-color: transparent;
             
         }
+
         #coin.clicked {
-            
+          -webkit-tap-highlight-color: transparent;
             transform: scale(1.1); /* Enlarge the coin when clicked */
         }
         body {
-            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 100%);
-            /* Adjust the gradient colors and direction as desired */
-        }
+          background-image: url("background1.jpg");
+          background-size:600px;
+          
+          
+         }
         .upgrade{
         
             max-width: fit-content;
@@ -42,36 +64,44 @@
           src: url(8-bit\ Arcade\ In.ttf);
         }
         #upgradePrice{
-          font-size: 38px;
+          font-size: 35px;
           font-family: arcade;
+          text-align: center;
+          color: white;
+          -webkit-text-stroke: 1px;
+          -webkit-text-stroke-color: black;
         }
         .upgrade {
-            background: linear-gradient(to bottom, rgb(148, 9, 120), rgb(92, 22, 122));
-            border-radius: 20%;
-            width: 400px;
-            height: auto;
+            background:transparent;
+            margin: auto;
+            border-radius: 10%;
+            width: auto;
+            height: 100px;
             border-color: azure;
-            border-width: 10px;
-            font-size: 14px;
+            padding: 0px;
+            
+            
+           
             text-align: center;
-            line-height: 100px;
-            transition: background 0.3s ease-in-out;
+           transition: background 0.3s ease-in-out;
           }
-          
-          .upgrade:hover {
-            background: linear-gradient(to bottom, #8e44ad, #9b59b6);
-          }
+
           
           .upgrade:active {
-            background: #8e44ad;
+            background: rgb(253, 250, 255);
             transform: scale(0.95);
           }
           
-          .upgrade-icon {
-            font-size: 24px;
-          }
+          
           
           .upgrade-text {
             font-size: 3px;
+          }
+          @font-face {
+            font-family: arcade2;
+            src: url(Crang.ttf);
+          }
+          #number{
+            font-family: arcade2;
           }
           
