@@ -1,0 +1,68 @@
+        /* Style for the coin and container */
+        #container {
+            text-align: center;
+        }
+        #number {
+            text-align: center;
+            justify-content: center;
+            color: white;
+            -webkit-text-stroke: 1px black;
+            font-size: 72px;
+            font-family:sans-serif
+            
+        }
+        #coin {
+            width: 400px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease; /* Add a smooth transition effect */
+        
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+             -webkit-user-select: none;
+            -ms-user-select: none;
+            
+        }
+        #coin.clicked {
+            
+            transform: scale(1.1); /* Enlarge the coin when clicked */
+        }
+        body {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            /* Adjust the gradient colors and direction as desired */
+        }
+        .upgrade{
+        
+            max-width: fit-content;
+            margin: auto;
+        }
+        .upgrade {
+            background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            
+            font-size: 14px;
+            text-align: center;
+            line-height: 100px;
+            transition: background 0.3s ease-in-out;
+          }
+          
+          .upgrade:hover {
+            background: linear-gradient(to bottom, #8e44ad, #9b59b6);
+          }
+          
+          .upgrade:active {
+            background: #8e44ad;
+            transform: scale(0.95);
+          }
+          
+          .upgrade-icon {
+            font-size: 24px;
+          }
+          
+          .upgrade-text {
+            font-size: 12px;
+          }
+          
