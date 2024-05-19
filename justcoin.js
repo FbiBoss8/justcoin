@@ -39,7 +39,6 @@ function upgrade() {
         return savedNumber;
     }
     else {
-        alert("unsuccessful")
         return savedNumber;
     }
 }
