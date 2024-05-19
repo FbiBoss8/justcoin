@@ -1,4 +1,5 @@
 const upgradePrice1=200;
+
 var numberElement = document.getElementById('number');
 var currentNumber = parseInt(numberElement.innerText);
 
@@ -13,6 +14,7 @@ function upgrade() {
     var savedNumber = parseInt(localStorage.getItem("coinCount"));
     if (upgradeCount < upgradePrices.length && savedNumber >= upgradePrices[upgradeCount]) {
         increment = increment + 1;
+    
         savedNumber = savedNumber - upgradePrices[upgradeCount];
         console.log(savedNumber);
         localStorage.setItem("coinCount", savedNumber); // Save the updated value
@@ -97,3 +99,14 @@ window.addEventListener('load', function() {
         priceElement.innerText = "Upgrade Price: " + savedUpgradePrice;
     }
 });
+window.onload = function() {
+    var player = document.getElementById('player');
+    var songs = ['music1.mp3', 'music2.mp3']; // Add your songs here
+
+    player.src = songs[Math.floor(Math.random() * songs.length)]; // Select a random song
+
+    player.onended = function() {
+        player.src = songs[Math.floor(Math.random() * songs.length)]; // Select a new random song when the current one ends
+        player.play();
+    };
+};
