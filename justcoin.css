@@ -37,12 +37,21 @@
             max-width: fit-content;
             margin: auto;
         }
+        @font-face {
+          font-family: arcade;
+          src: url(8-bit\ Arcade\ In.ttf);
+        }
+        #upgradePrice{
+          font-size: 48px;
+          font-family: arcade;
+        }
         .upgrade {
-            background: linear-gradient(to bottom, #9b59b6, #8e44ad);
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            
+            background: linear-gradient(to bottom, rgb(148, 9, 120), rgb(92, 22, 122));
+            border-radius: 20%;
+            width: 400px;
+            height: auto;
+            border-color: azure;
+            border-width: 10px;
             font-size: 14px;
             text-align: center;
             line-height: 100px;
@@ -63,6 +72,6 @@
           }
           
           .upgrade-text {
-            font-size: 12px;
+            font-size: 3px;
           }
           
