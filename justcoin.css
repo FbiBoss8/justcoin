@@ -42,7 +42,7 @@
           src: url(8-bit\ Arcade\ In.ttf);
         }
         #upgradePrice{
-          font-size: 48px;
+          font-size: 38px;
           font-family: arcade;
         }
         .upgrade {
