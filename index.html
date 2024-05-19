@@ -9,15 +9,19 @@
     <title>Coin Clicker</title>
 </head>
 <body>
-    <link rel="stylesheet" href="justcoin.css">
     
+    <link rel="stylesheet" href="justcoin.css">
+    <audio id="player" src="" type="audio/mpeg" autoplay></audio>
+
+
+
     <div id="container">
         <p id="number">0</p>
         <img id="coin" src="justcoin.png" alt="Coin" onclick="addNumber()">
         
     </div>
     <div class="upgrade">
-        <button id="upgrade" onclick="upgrade()" style="background-color: transparent; border: none;">
+        <button id="upgrade" onclick="upgrade() , playAudio()" style="background-color: transparent; border: none;">
             <p id="upgradePrice">Upgrade Price: 500</p>
 
         </button>
